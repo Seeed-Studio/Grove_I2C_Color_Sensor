@@ -1,18 +1,18 @@
 /****************************************************************************/	
-//  Hardware: Grove - I2C Color Sensor
-//  Arduino IDE: Arduino-1.6
-//  
-//  Author: Isaac Drafton
-//  Version: 1.0
-//  Based on the library by FrankieChu - www.seeedstudio.com
+//	Hardware: Grove - I2C Color Sensor
+//	Arduino IDE: Arduino-1.6
 //	
+//	Author: Isaac Drafton
+//	Version: 1.0
+//	Based on the library by FrankieChu - www.seeedstudio.com
+//
 /******************************************************************************/
 #include <GroveColorSensor.h>
 #include <Math.h>
 #include <Wire.h>
 
 void GroveColorSensor::init()
-{	
+{
 	GroveColorSensor::setTimingReg(); 
 	GroveColorSensor::setInterruptSourceReg();  
 	GroveColorSensor::setInterruptControlReg(); 

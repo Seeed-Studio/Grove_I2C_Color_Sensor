@@ -1,15 +1,24 @@
+/****************************************************************************/	
+//	Hardware: Grove - I2C Color Sensor
+//	Arduino IDE: Arduino-1.6
+//	
+//	Author: Isaac Drafton
+//	Version: 1.0
+//	Based on the library by FrankieChu - www.seeedstudio.com
+//
+/******************************************************************************/
 #ifndef PREMEASUREDCOLOR
 #define PREMEASUREDCOLOR
 
 enum PreMeasuredColor
 {
-	BROWN,	   //	0
-	RED,	   //	1
-	GREEN,	   //	2
-	BLUE,	   //	3
-	WHITE,	   //	4
-	BLACK,	   //	5
-	UNKNOWN,   //	6
+	BROWN,		//	0
+	RED,		//	1
+	GREEN,		//	2
+	BLUE,		//	3
+	WHITE,		//	4
+	BLACK,		//	5
+	UNKNOWN,	//	6
 	sizeOfPreMeasuredColorArray
 };
 

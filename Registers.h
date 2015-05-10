@@ -1,3 +1,13 @@
+/****************************************************************************/	
+//	Hardware: Grove - I2C Color Sensor
+//	Arduino IDE: Arduino-1.6
+//	
+//	Author: Isaac Drafton
+//	Version: 1.0
+//	Based on the library by FrankieChu - www.seeedstudio.com
+//
+/******************************************************************************/
+
 #ifndef GROVECOLORSENSORREG
 #define GROVECOLORSENSORREG
 
