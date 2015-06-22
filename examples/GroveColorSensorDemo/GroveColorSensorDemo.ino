@@ -14,7 +14,6 @@ void loop()
 	while(1)
 	{
 		colorSensor.readRGB();
-		colorSensor.calculateCoordinate();
 		delay(300);
 		colorSensor.clearInterrupt(); 
 	}

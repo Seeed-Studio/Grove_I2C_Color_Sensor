@@ -31,8 +31,9 @@ public:
 		, const int& interruptMode
 		, const int& gainAndPrescaler
 		, const int& sensorAddress);
-	
+
 	void readRGB();
+	void readRGB(int *red, int *green, int *blue);
 	void calculateCoordinate();
 	void clearInterrupt();
 	

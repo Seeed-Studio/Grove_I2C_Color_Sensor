@@ -113,6 +113,41 @@ void GroveColorSensor::readRGB()
 	Serial.println(clear_,DEC);  
 }
 
+void GroveColorSensor::readRGB(int *red, int *green, int *blue)
+{
+	Wire.beginTransmission(sensorAddress_);
+	Wire.write(REG_BLOCK_READ);
+	Wire.endTransmission();
+	
+	Wire.beginTransmission(sensorAddress_);
+	Wire.requestFrom(sensorAddress_, 8);
+	delay(100);
+	
+	// if two bytes were received
+	if(8 <= Wire.available())
+	{
+		int i;
+		for(i = 0; i < 8; ++i)
+		{
+			readingdata_[i] = Wire.read();
+			//Serial.println(readingdata_[i], BIN);
+		}
+	}
+	green_	= readingdata_[1] * 256 + readingdata_[0];
+	red_ 	= readingdata_[3] * 256 + readingdata_[2];
+	blue_	= readingdata_[5] * 256 + readingdata_[4];
+	clear_	= readingdata_[7] * 256 + readingdata_[6];
+	
+	*red   = red_;
+	*green = green_;
+	*blue  = blue_;
+	
+	Serial.println("The RGB value are: ");
+	Serial.println(red_,DEC);
+	Serial.println(green_,DEC);
+	Serial.println(blue_,DEC);
+}
+
 void GroveColorSensor::calculateCoordinate()
 {
 	double X;
