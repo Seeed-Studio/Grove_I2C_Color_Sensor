@@ -51,9 +51,13 @@ void loop()
 	{
 		colorSensor.readRGB(&red, &green, &blue);		//Read RGB values to variables.
 		delay(300);
-        Serial.println(red,DEC);
-        Serial.println(green,DEC);
-	    Serial.println(blue,DEC);
+		Serial.print("The RGB value are: RGB( ");
+		Serial.print(red,DEC);
+		Serial.print(", ");
+		Serial.print(green,DEC);
+		Serial.print(", ");
+		Serial.print(blue,DEC);
+	    Serial.println(" )");
 		colorSensor.clearInterrupt();
 		for(int i = 0; i<NUM_LEDS; i++)
 		{
