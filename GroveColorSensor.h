@@ -22,6 +22,8 @@ class GroveColorSensor
 {
 public:
 
+	// Color Sensor LED Status
+	int ledStatus;
 	// Default constructor
 	GroveColorSensor();
 	// Constructor with parameters

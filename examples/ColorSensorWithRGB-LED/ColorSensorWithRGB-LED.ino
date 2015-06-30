@@ -47,6 +47,7 @@ void loop()
 {
     int red, green, blue;
 	GroveColorSensor colorSensor;
+	colorSensor.ledStatus = 1;							// When turn on the color sensor LED, ledStatus = 1; When turn off the color sensor LED, ledStatus = 0.
 	while(1)
 	{
 		colorSensor.readRGB(&red, &green, &blue);		//Read RGB values to variables.
