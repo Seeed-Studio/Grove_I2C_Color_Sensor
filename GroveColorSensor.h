@@ -2,8 +2,6 @@
 //	Hardware: Grove - I2C Color Sensor
 //  Arduino IDE: Arduino-1.6
 //  
-//  Author: Isaac Drafton
-//	Version: 0.9
 //  Refactored version of the library by FrankieChu - www.seeedstudio.com
 //	
 /******************************************************************************/
