@@ -88,9 +88,7 @@ void GroveColorSensor::readRGB()
 	Wire.write(REG_BLOCK_READ);
 	Wire.endTransmission();
 	
-	Wire.beginTransmission(sensorAddress_);
 	Wire.requestFrom(sensorAddress_, 8);
-	delay(100);
 	
 	// if two bytes were received
 	if(8 <= Wire.available())
@@ -114,7 +112,7 @@ void GroveColorSensor::readRGB()
 	Serial.print(", ");
 	Serial.print(blue_,DEC);
 	Serial.println(" )");
-	Serial.print("The Clear channel value are: ");
+	Serial.print("The Clear channel value is: ");
 	Serial.println(clear_,DEC);
 }
 
@@ -124,9 +122,7 @@ void GroveColorSensor::readRGB(int *red, int *green, int *blue)
 	Wire.write(REG_BLOCK_READ);
 	Wire.endTransmission();
 	
-	Wire.beginTransmission(sensorAddress_);
 	Wire.requestFrom(sensorAddress_, 8);
-	delay(100);
 
 	// if two bytes were received
 	if(8 <= Wire.available())
