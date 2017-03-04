@@ -55,7 +55,7 @@
 #define GAIN_1 0x00
 #define GAIN_4 0x10
 #define GAIN_16 0x20
-#define GANI_64 0x30
+#define GAIN_64 0x30
 #define PRESCALER_1 0x00
 #define PRESCALER_2 0x01
 #define PRESCALER_4 0x02
