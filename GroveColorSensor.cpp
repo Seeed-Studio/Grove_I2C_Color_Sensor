@@ -171,7 +171,7 @@ void GroveColorSensor::readRGB(int *red, int *green, int *blue)
 	}
 	
 	int minColor = min(red_, green_);
-	minColor = min(maxColor, blue_);
+	minColor = min(minColor, blue_);
 	maxColor = max(red_, green_);
 	maxColor = max(maxColor, blue_);
 	
@@ -220,7 +220,7 @@ void GroveColorSensor::readRGB(int *red, int *green, int *blue)
     }
 	
 	minColor = min(red_, green_);
-	minColor = min(maxColor, blue_);
+	minColor = min(minColor, blue_);
 	if(maxColor == green_ && red_ >= 0.85*maxColor && minColor == blue_)						//yellow
 	{
 		red_ = maxColor;
