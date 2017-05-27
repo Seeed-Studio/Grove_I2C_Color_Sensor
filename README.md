@@ -1,7 +1,7 @@
 Grove - I2C Color Sensor
 ------------------------
 
-[![Grove - I2C Color Sensor](http://www.seeedstudio.com/depot/bmz_cache/9/9bf4f9503ae716421188aaa65205b272.image.530x397.jpg)](http://www.seeedstudio.com/depot/grove-i2c-color-sensor-p-854.html?cPath=25_27)
+[![Grove - I2C Color Sensor](https://statics3.seeedstudio.com/seeed/img/2016-10/PMzabRmYG2N5CXOXxJ6irntA.jpg)](http://www.seeedstudio.com/depot/grove-i2c-color-sensor-p-854.html?cPath=25_27)
 
 This is an Arduino example for [Grove - I2C Color Sensor](http://www.seeedstudio.com/depot/grove-i2c-color-sensor-p-854.html?cPath=25_27)
 
