@@ -1,5 +1,19 @@
-GroveColorSensor KEYWORD1
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
 
-readRGB KEYWORD2
-calculateCoordinate KEYWORD2
-clearInterrupt KEYWORD2
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+GroveColorSensor	KEYWORD1
+
+readRGB	KEYWORD2
+calculateCoordinate	KEYWORD2
+clearInterrupt	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
