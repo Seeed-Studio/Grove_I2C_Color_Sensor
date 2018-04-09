@@ -1,11 +1,13 @@
 Grove - I2C Color Sensor
 ------------------------
 
-[![Grove - I2C Color Sensor](https://statics3.seeedstudio.com/seeed/img/2016-10/PMzabRmYG2N5CXOXxJ6irntA.jpg)](http://www.seeedstudio.com/depot/grove-i2c-color-sensor-p-854.html?cPath=25_27)
+<img src=https://statics3.seeedstudio.com/seeed/img/2016-10/8Qe0dAysi8buqDlJz2AnNNXv.jpg width=300><img src=https://statics3.seeedstudio.com/seeed/img/2016-10/IwioKtqDuksNgjr7XWfLIYjQ.jpg width=300>
 
-This is an Arduino example for [Grove - I2C Color Sensor](http://www.seeedstudio.com/depot/grove-i2c-color-sensor-p-854.html?cPath=25_27)
+[Grove - I2C Color Sensor](https://www.seeedstudio.com/grove-i2c-color-sensor-p-854.html?cPath=25_27)
 
-For more information, please refer to [wiki page](http://www.seeedstudio.com/wiki/Grove_-_I2C_Color_Sensor).
+This module is based on the color sensor TCS3414CS with digital output I2C. Based on the 8*2 array of filtered photodiodes and 16-bits analog-to-digital converters, you can gain the color chromaticity of ambient light or the color of objects. Of the 16 photodiodes, 4 have red filters, 4 have green filters, 4 have blue filters and 4 have no filter(clear). With the synchronization input pin, external pulsed light source can provides precise synchronous conversion control.
+
+For more information, please refer to [wiki page](http://wiki.seeedstudio.com/Grove-I2C_Color_Sensor/).
 
 ----
 
