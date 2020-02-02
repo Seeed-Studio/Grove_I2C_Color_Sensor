@@ -1,7 +1,7 @@
-/****************************************************************************/    
+/****************************************************************************/
 //    Hardware: Grove - I2C Color Sensor
 //    Arduino IDE: Arduino-1.6
-//    
+//
 //    Author: Adrian Cotfas
 //    Based on the library by FrankieChu - www.seeedstudio.com
 //
@@ -44,40 +44,38 @@
 GroveColorSensor leftColorSensor;
 GroveColorSensor rightColorSensor;
 
-void setup()
-{
-  setupMuxPins();
-  Serial.begin(SERIAL_PORT_SPEED);
-  Wire.begin();
+void setup() {
+    setupMuxPins();
+    Serial.begin(SERIAL_PORT_SPEED);
+    Wire.begin();
 }
 
-void loop()
-{
-  int leftRed, leftGreen, leftBlue;
-  int rightRed, rightGreen, rightBlue;
-  ActivateLeftColorSensor();
-  leftColorSensor.readRGB(&leftRed, &leftGreen, &leftBlue);
-  delay(300);
-  Serial.println("Left: RGB( ");
-  Serial.print(leftRed,DEC);
-  Serial.print(", ");
-  Serial.print(leftGreen,DEC);
-  Serial.print(", ");
-  Serial.print(leftBlue,DEC);
-  Serial.println(" )");
-  leftColorSensor.clearInterrupt();
+void loop() {
+    int leftRed, leftGreen, leftBlue;
+    int rightRed, rightGreen, rightBlue;
+    ActivateLeftColorSensor();
+    leftColorSensor.readRGB(&leftRed, &leftGreen, &leftBlue);
+    delay(300);
+    Serial.println("Left: RGB( ");
+    Serial.print(leftRed, DEC);
+    Serial.print(", ");
+    Serial.print(leftGreen, DEC);
+    Serial.print(", ");
+    Serial.print(leftBlue, DEC);
+    Serial.println(" )");
+    leftColorSensor.clearInterrupt();
 
-  ActivateRightColorSensor();
-  rightColorSensor.readRGB(&rightRed, &rightGreen, &rightBlue);
-  delay(300);
-  Serial.println("Right: RGB( ");
-  Serial.print(rightRed,DEC);
-  Serial.print(", ");
-  Serial.print(rightGreen,DEC);
-  Serial.print(", ");
-  Serial.print(rightBlue,DEC);
-  Serial.println(" )");
-  
-  rightColorSensor.clearInterrupt();
-  delay(1000);
+    ActivateRightColorSensor();
+    rightColorSensor.readRGB(&rightRed, &rightGreen, &rightBlue);
+    delay(300);
+    Serial.println("Right: RGB( ");
+    Serial.print(rightRed, DEC);
+    Serial.print(", ");
+    Serial.print(rightGreen, DEC);
+    Serial.print(", ");
+    Serial.print(rightBlue, DEC);
+    Serial.println(" )");
+
+    rightColorSensor.clearInterrupt();
+    delay(1000);
 }

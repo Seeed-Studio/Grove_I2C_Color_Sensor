@@ -1,8 +1,8 @@
 #ifndef GROVECOLORSENSORREG
 #define GROVECOLORSENSORREG
 
-//the I2C address for the color sensor 
-#define COLOR_SENSOR_ADDR  0x39 
+//the I2C address for the color sensor
+#define COLOR_SENSOR_ADDR  0x39
 #define REG_CTL 0x80
 #define REG_TIMING 0x81
 #define REG_INT 0x82
@@ -14,7 +14,7 @@
 #define REG_HIGH_THRESH_LOW_BYTE 0x8A
 #define REG_HIGH_THRESH_HIGH_BYTE 0x8B
 //The REG_BLOCK_READ and REG_GREEN_LOW direction are the same
-#define REG_BLOCK_READ 0xD0 
+#define REG_BLOCK_READ 0xD0
 #define REG_GREEN_LOW 0xD0
 #define REG_GREEN_HIGH 0xD1
 #define REG_RED_LOW 0xD2
@@ -32,13 +32,13 @@
 #define INTEG_MODE_MANUAL 0x10
 #define INTEG_MODE_SYN_SINGLE 0x20
 #define INTEG_MODE_SYN_MULTI 0x30
- 
+
 #define INTEG_PARAM_PULSE_COUNT1 0x00
 #define INTEG_PARAM_PULSE_COUNT2 0x01
 #define INTEG_PARAM_PULSE_COUNT4 0x02
 #define INTEG_PARAM_PULSE_COUNT8 0x03
 
-//Interrupt Control Register 
+//Interrupt Control Register
 #define INTR_STOP 40
 #define INTR_DISABLE 0x00
 #define INTR_LEVEL 0x10
