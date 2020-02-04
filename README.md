@@ -1,4 +1,4 @@
-Grove - I2C Color Sensor
+Grove - I2C Color Sensor  [![Build Status](https://travis-ci.com/Seeed-Studio/Grove_I2C_Color_Sensor.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Grove_I2C_Color_Sensor)
 ------------------------
 
 <img src=https://statics3.seeedstudio.com/seeed/img/2016-10/8Qe0dAysi8buqDlJz2AnNNXv.jpg width=300><img src=https://statics3.seeedstudio.com/seeed/img/2016-10/IwioKtqDuksNgjr7XWfLIYjQ.jpg width=300>
